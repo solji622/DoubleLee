@@ -1,5 +1,5 @@
 # DoubleLee
-WebStudy Project - Shoping Site [Double Lee] <br>
+WebStudy Project - Shoping Mall Site [Double Lee] <br>
 Handmade 상품 판매 사이트 제작 <br>
 
 <h4>초기 레이아웃 구성안</h4>
