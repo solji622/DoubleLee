@@ -1,0 +1,175 @@
+
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'UhBeeSe_hyun';
+}
+
+header {
+    background-color: #FFBE98;
+    display: flex;
+    height: 50px;
+}
+
+.logo{
+    padding: 0 10px;
+}
+
+.search_box {
+    margin-left: 400px;
+    float: left;
+    width: 60%;
+}
+
+.search_text{
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13pt;
+}
+
+.search_btn{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.mypage ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.mypage a{
+    text-decoration: none;
+    color:black;
+}
+/* 검색창과 mypage의 한줄 정렬이 어려워 우선 html에서 로그인 페이지 주석 처리함 */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #feece2;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 15pt;
+    padding: 10px 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 100px;
+}
+
+.category li a:hover{
+    background-color: #FFBE98;
+    color: #fff;
+}
+
+main{
+    background-color: #ffdfbb;
+}
+
+/* 슬라이드 애니메이션은 js 통해 구현 */
+.event_slider{
+    width: 100%;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images {
+    margin-left: 370px;
+    display: flex;
+    width: 400%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.btn button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* 버튼이 슬라이드 위에 나타나도록 설정 */
+}
+
+.left_btn {
+    left: 10px;
+}
+
+.right_btn {
+    right: 10px;
+}
+
+section{
+    background-color: #E2BFB3;
+    width: 100%;
+    height: 550px;
+}
+
+.item_list{
+    position: absolute;
+    left: 20%;
+}
+
+.item_box{
+    display: flex;
+    float: left;
+    margin-top: 30px;
+    margin-right: 200px;
+    background-color: #feece2;
+    width: 500px;
+    height: 230px;
+}
+
+.item_img img{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.item_info{
+    float: left;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.name{
+    font-size: 14pt;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+.where{
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #fff1e8;
+    display: flex;
+    height: 100px;
+}
+
+.footer-copyright{
+    padding-left: 35%;
+}
