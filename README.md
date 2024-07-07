@@ -10,7 +10,6 @@ Handmade 상품 판매 사이트 제작 <br>
 
 
 <h4>1차 디자인 구현</h4>
-![image](https://github.com/solji622/DoubleLee/assets/126930370/1b00e85e-c1fb-437a-8bf0-c7422627ef19)
 
 
 
