@@ -9,7 +9,7 @@
 }
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'GmarketSansMedium';
@@ -27,7 +27,7 @@ header {
     background-color: #fff;
 }
 
-.logo{
+.logo {
     width: 10%;
     padding-left: 10px;
     /* 세로 가운데 정렬 */
@@ -40,11 +40,13 @@ header {
     display: flex;
     width: 80%;
     height: 100%;
-    align-items: center; /* 세로 정렬 */
-    justify-content: center; /* 가로 정렬 */
+    align-items: center;
+    /* 세로 정렬 */
+    justify-content: center;
+    /* 가로 정렬 */
 }
 
-.search_text{
+.search_text {
     display: block;
     width: 50%;
     height: 80%;
@@ -54,7 +56,7 @@ header {
     border-radius: 10px;
 }
 
-.search_btn{
+.search_btn {
     width: 5%;
     height: 70%;
     margin-left: 3px;
@@ -63,7 +65,7 @@ header {
     border: 2px solid lightgray;
 }
 
-.mypage_box{
+.mypage_box {
     width: 10%;
     height: 100%;
     padding-right: 10px;
@@ -73,7 +75,7 @@ header {
     display: flex;
 }
 
-#my_page{
+#my_page {
     width: 100%;
     height: 80%;
     display: flex;
@@ -83,16 +85,12 @@ header {
     background-color: lightgray;
 }
 
-#sign_in {
-    display: none;
-}
-
-.mypage_box a{
+.mypage_box a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +98,7 @@ nav{
     background-color: #fff;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     font-size: 15pt;
     padding: 10px 0;
@@ -112,20 +110,21 @@ nav a {
     padding: 10px 100px;
 }
 
-.category li a:hover{
+.category li a:hover {
     box-shadow: inset 0 0 10px #FFBE98;
     border-radius: 15px;
 }
 
-main{
+main {
     width: 100%;
     padding: 20px 0;
     background-color: #fff;
 }
 
 /* 슬라이드 애니메이션은 js 통해 구현 */
-.event_slider{
-    width: 1100px; /* 이미지 사이즈(1196px)랑 전체적인 크기를 잘 조정해서 1100으로 함*/
+.event_slider {
+    width: 1100px;
+    /* 이미지 사이즈(1196px)랑 전체적인 크기를 잘 조정해서 1100으로 함*/
     height: 230px;
     margin: auto;
     position: relative;
@@ -146,12 +145,13 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 1; /* 버튼이 슬라이드 위에 나타나도록 설정 */
+    z-index: 1;
+    /* 버튼이 슬라이드 위에 나타나도록 설정 */
 }
 
 .left_btn {
@@ -162,7 +162,7 @@ main{
     right: 10px;
 }
 
-section{
+section {
     background-color: rgb(243, 243, 243);
     width: 100%;
     height: calc(80% - 10px);
@@ -170,13 +170,13 @@ section{
     justify-content: center;
 }
 
-.item_list{
+.item_list {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.item_box{
+.item_box {
     display: flex;
     float: left;
     margin: 30px auto 0;
@@ -187,39 +187,39 @@ section{
     height: 220px;
 }
 
-.item_box:hover{
+.item_box:hover {
     box-shadow: inset 0 0 15px #FFBE98;
 }
 
-.item_img img{
+.item_img img {
     padding: 10px;
     width: 200px;
     height: 200px;
 }
 
-.item_info{
+.item_info {
     float: left;
     margin-top: 40px;
     padding-left: 10px;
 }
 
-.name{
+.name {
     font-size: 20pt;
     font-weight: bold;
     color: saddlebrown;
 }
 
-.where{
+.where {
     font-size: 15pt;
     margin-top: 20px;
 }
 
-footer{
+footer {
     background-color: #fff;
     display: flex;
     height: 10px;
 }
 
-.footer-copyright{
+.footer-copyright {
     padding-left: 35%;
 }
