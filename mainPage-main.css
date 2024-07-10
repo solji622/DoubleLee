@@ -17,6 +17,10 @@ a {
     color: black;
 }
 
+#wrap {
+    width: 100%;
+}
+
 /* header -> 로고, 검색창, 마이페이지 */
 header {
     width: 100%;
@@ -62,6 +66,7 @@ header {
     border-radius: 5px;
     border: 2px solid lightgray;
 }
+
 
 /* 마이페이지 버튼 및 마이페이지 */
 .mypage_box {
@@ -147,6 +152,36 @@ header {
     padding: 10px;
 }
 
+#name {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: translate(-10px, -30px);
+    border-radius: 5px;
+}
+
+.myitem p {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#order {
+    background-color: aliceblue;
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+#order:hover {
+    background-color: rgb(205, 235, 245);
+}
+
 
 .all_category {
     margin: 40px 0 0 10px;
@@ -176,7 +211,6 @@ header {
     display: block;
     background-color: #fff;
     text-align: center;
-    margin: 10px 0;
     width: 250px;
     height: 35px;
     line-height: 35px;
@@ -193,7 +227,8 @@ header {
 }
 
 .dropdown a:hover {
-    box-shadow: 5px 5px 10px rgb(161, 155, 155);
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 10px rgb(161, 155, 155);
 }
 
 
@@ -219,7 +254,7 @@ nav a {
 }
 
 .category li a:hover {
-    box-shadow: inset 0 0 10px #FFBE98;
+    box-shadow: inset 0 0 10px rgb(161, 155, 155);
     border-radius: 15px;
 }
 
@@ -278,53 +313,73 @@ main {
 section {
     background-color: rgb(243, 243, 243);
     width: 100%;
-    height: calc(80% - 10px);
+    height: calc(100% - 580px);
+    /* 위 아래 여백 확보 */
+    padding: 10px 0 40px 0;
     display: flex;
     justify-content: center;
 }
 
 .item_list {
-    width: 90%;
+    width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .item_box {
     display: flex;
-    float: left;
-    margin: 30px auto 0;
+    margin: 30px auto;
     background-color: #fff;
-    border-radius: 20px;
-    padding: 5px;
-    width: 500px;
-    height: 220px;
+    border-radius: 15px;
+    width: 400px;
+    height: 180px;
+    align-items: center;
 }
 
 .item_box:hover {
-    box-shadow: inset 0 0 15px #FFBE98;
+    box-shadow: 0 0 20px rgb(161, 155, 155);
+}
+
+.item_img a {
+    display: inline-block;
+    padding: 15px;
+    width: 170px;
+    height: 170px;
 }
 
 .item_img img {
-    padding: 10px;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 .item_info {
-    float: left;
-    margin-top: 40px;
-    padding-left: 10px;
+    width: 100%;
+    height: 160px;
+    padding: 20px 0 15px 10px;
 }
 
 .name {
-    font-size: 20pt;
+    width: 100%;
+    height: 70%;
+    font-size: 15pt;
     font-weight: bold;
     color: saddlebrown;
+    display: flex;
+    align-items: top;
 }
 
 .where {
-    font-size: 15pt;
-    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    font-size: 10pt;
+    align-items: bottom;
+}
+
+.price {
+    width: 100%;
+    height: 15%;
+    font-size: 10pt;
+    align-items: bottom;
 }
 
 
