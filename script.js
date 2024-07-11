@@ -1,4 +1,4 @@
-// my page 열고 닫기
+/// my page 열고 닫기
 document.addEventListener('DOMContentLoaded', function () {
     const openBtn = document.getElementById('mypage_btn'); // open 버튼
     const myPage = document.getElementById('mypage'); // open 버튼 누르면 나오는 my page 영역
@@ -17,8 +17,27 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-/// 이미지 슬라이더
 
+/// my page 안에 카테고리 자연스러운 드롭 다운 
+const categories = document.querySelectorAll(".cgory");
+
+categories.forEach(item => {
+    item.addEventListener("mouseover", function () {
+        const drop = this.querySelector(".dropdown")
+        drop.style.height = "105px";
+    });
+}); // 마우스 올렸을 때
+
+categories.forEach(item => {
+    item.addEventListener("mouseout", function () {
+        const drop = this.querySelector(".dropdown")
+        drop.style.height = "0px";
+    });
+}); // 마우스 땠을 때
+
+
+
+/// 이미지 슬라이더
 // 필요 변수 불러오기
 const origin_slide_time = 5000; // 원래 회전 시간
 const add_slide_time = 3000; // 추가 회전 시간
