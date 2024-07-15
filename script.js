@@ -106,3 +106,22 @@ right_btn.addEventListener("click", () => {
 
 // 슬라이더 시작
 window.onload = startSlider;
+
+
+
+// 로그인, 회원가입 페이지 비밀번호 보고 끄기
+const pwInput = document.getElementById("password");
+const eyebtn = document.querySelector(".eye i");
+
+eyebtn.addEventListener("click", function () {
+    if (pwInput.type === 'password') {
+        pwInput.type = 'text';
+        eye.classList.remove("fa-eye");
+        eye.classList.add("fa-eye-slash");
+    } else {
+        pwInput.type = 'password';
+        eye.classList.add("fa-eye");
+        eye.classList.remove("fa-eye-slash");
+    }
+
+})
